@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+}
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin-left: 32%;
+  margin-top: 5%;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev:hover,
+.next:hover{
+  color: white;
+}
+.numbertext {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6 {
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.37);
+}
+
+.next {
+  right: 50%;
+  border-radius: 3px 0 0 3px;
+}
+.previous {
+  left: 50%;
+}
+.prev,.next{
+  background: transparent;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+img {
+  width: 50%;
+  height: 20%;
+}
+.images {
+  height: 10%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.images {
+  display: none;
+}
+
+a {
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  background-color: red;
+ 
+}
+
+a:hover {
+  display: block;
+  background: none;
+}
+
+a.next{
+  background-color: rgba(0, 0, 0, 0.658);
+}
+a.prev{
+  background-color: rgba(0, 0, 0, 0.658);
+}
